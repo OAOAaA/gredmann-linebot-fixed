@@ -1,7 +1,7 @@
 def format_pairing_output(result: dict, relation: str) -> str:
-    zodiac = result["zodiac_result"]
-    tarot = result["tarot_result"]
-    wuxing = result["wuxing_result"]
+    zodiac = result.get["zodiac_result"]
+    tarot = result.get["tarot_result"]
+    wuxing = result.get["wuxing_result"]
 
     return f"""
 🔮 命理配對分析（{relation}）

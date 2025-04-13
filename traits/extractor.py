@@ -28,3 +28,12 @@ def extract_traits(birth: str) -> dict:
         "numerology_result": {},
         "base_energy": 0
     }
+return {
+    "zodiac_result": {...},
+    "tarot_result": {...},
+    "wuxing_result": {...},
+    "ziwei_result": {...},
+    "yijing_result": {...},
+    "numerology_result": {...},
+    "base_energy": 數值
+}

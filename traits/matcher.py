@@ -1,7 +1,7 @@
-from modules.zodiac import compare_zodiacs
-from modules.tarot import compare_tarot_cards
-from modules.wuxing import compare_elements
-from modules.suggestion import get_pairing_suggestion
+from ..modules.zodiac import compare_zodiacs
+from ..modules.tarot import compare_tarot_cards
+from ..modules.wuxing import compare_elements
+from ..modules.suggestion import get_pairing_suggestion
 
 def match_pairing(a_traits: dict, b_traits: dict, relation: str) -> dict:
     zodiac_result = compare_zodiacs(a_traits["zodiac"], b_traits["zodiac"])
