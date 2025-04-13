@@ -3,7 +3,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-from ..modules.parser import parse_pairing_command
+from modules.parser import parse_pairing_command
 from traits.extractor import extract_traits
 from traits.matcher import match_pairing
 from traits.formatter import format_pairing_output
