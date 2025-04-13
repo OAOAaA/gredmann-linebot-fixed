@@ -13,3 +13,5 @@ def get_pairing_suggestion(relation: str, score: int, traits_a: list, traits_b: 
         return f"{base.get(relation, ['⚖️'])[0]} 若願彼此包容，將成穩固搭檔。"
     else:
         return f"{base.get(relation, ['🌫'])[0]} 差異明顯，靠智慧修煉，方可長久同行。"
+def get_suggestion(a_birth: str, b_birth: str) -> str:
+    return "✨ 彼此多些理解與尊重，將能創造長久默契的關係。"
