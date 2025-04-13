@@ -16,3 +16,15 @@ def extract_pair_traits(a_birth: str, b_birth: str) -> dict:
         "numerology_result": get_numerology_info(a_birth),
         "suggestion": get_suggestion(a_birth, b_birth),
     }  # ✅ ← 結尾的大括號絕對不能漏
+
+def extract_traits(birth: str) -> dict:
+    # 示例函式：請根據實際邏輯完善內容
+    return {
+        "zodiac_result": {},
+        "tarot_result": {},
+        "wuxing_result": {},
+        "ziwei_result": {},
+        "yijing_result": {},
+        "numerology_result": {},
+        "base_energy": 0
+    }
