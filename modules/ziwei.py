@@ -6,3 +6,10 @@ def get_ziwei_ming_gong(year: int, month: int, day: int) -> dict:
         "main_star": stars[index],
         "traits": ["變革", "獨立", "不服輸"] if stars[index] == "破軍" else ["沉穩", "謹慎", "包容"]
     }
+def get_ziwei_info(birthdate: str) -> dict:
+    # 這裡是模擬用的假資料，未來可擴充實作邏輯
+    return {
+        "palace": "命宮在亥",
+        "score": 15,
+        "detail": "主內思考型，富直覺洞察力"
+    }
