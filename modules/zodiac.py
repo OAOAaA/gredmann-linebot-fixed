@@ -18,3 +18,11 @@ def compare_zodiacs(z1: str, z2: str) -> dict:
     }
     score = 90 if (z1, z2) in compatible or (z2, z1) in compatible else 65
     return {"compatible": (z1, z2) in compatible, "compatibility_score": score}
+
+def get_zodiac_compatibility(a_birth: str, b_birth: str) -> dict:
+    # 👉 這裡先回傳假資料，之後你可以替換成真正的星座邏輯
+    return {
+        "type": "默契型",
+        "detail": "兩人之間具有穩定的情感連結與理解能力",
+        "compatibility_score": 85
+    }
