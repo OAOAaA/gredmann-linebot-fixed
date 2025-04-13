@@ -1,5 +1,5 @@
 def get_zodiac(month: int, day: int) -> str:
-zodiac_result = get_zodiac_compatibility(a_birth, b_birth)
+    zodiac_result = get_zodiac_compatibility(a_birth, b_birth)
     zodiacs = [
         (120, "摩羯"), (219, "水瓶"), (321, "雙魚"), (420, "牡羊"),
         (521, "金牛"), (621, "雙子"), (722, "巨蟹"), (823, "獅子"),
