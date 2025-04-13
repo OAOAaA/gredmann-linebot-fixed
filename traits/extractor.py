@@ -9,12 +9,12 @@ from ..modules.suggestion import get_pairing_suggestion
 def extract_traits(birth: str) -> dict:
     return {
 def extract_pair_traits(a_birth: str, b_birth: str) -> dict:
-    traits = {
-        "birth": birth,
-        "zodiac": get_zodiac_compatibility(birth),
-        "tarot": get_tarot_compatibility(birth),
-        "wuxing": get_wuxing_interaction(birth),
-        "ziwei": get_ziwei_info(birth),
-        "yijing": get_yijing_hexagram(birth),
-        "numerology": get_numerology_info(birth),
+    return {
+        "zodiac_result": get_zodiac_compatibility(a_birth, b_birth),
+        "tarot_result": get_tarot_compatibility(a_birth, b_birth),
+        "wuxing_result": get_wuxing_interaction(a_birth, b_birth),
+        "ziwei_result": get_ziwei_info(a_birth),
+        "yijing_result": get_yijing_hexagram(a_birth),
+        "numerology_result": get_numerology_info(a_birth),
+        "suggestion": get_suggestion(a_birth, b_birth),
     }
